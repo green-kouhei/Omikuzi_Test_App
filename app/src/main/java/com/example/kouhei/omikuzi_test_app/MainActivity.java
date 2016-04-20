@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
     public void getomikuji(View view) {
     TextView tv = (TextView) findViewById(R.id.display);
     Random randomGenerator = new Random();
-        int i = randomGenerator.nextInt(3);
+        int i = randomGenerator.nextInt(4);
 
         switch(i){
             case 0:
@@ -37,6 +37,9 @@ public class MainActivity extends AppCompatActivity {
                 s = ("大凶");
 
                 break;
+
+            case 3:
+                s = ("バーカｗｗｗｗｗｗ");
         }
 
         tv.setText(s);
