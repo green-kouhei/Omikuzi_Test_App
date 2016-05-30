@@ -1,7 +1,6 @@
 package com.example.kouhei.omikuzi_test_app;
 
 
-import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.net.Uri;
@@ -31,7 +30,6 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void getomikuji(View view) {
-<<<<<<< HEAD
         TextView tv = (TextView) findViewById(R.id.display);
         ImageView im = (ImageView) findViewById(R.id.picture);
         Bitmap bitmap = null;
@@ -43,16 +41,11 @@ public class MainActivity extends AppCompatActivity {
             istream[3] = getResources().getAssets().open("pic_04.jpg");
 
 
-            // im.setImageBitmap(bitmap);
+
         } catch (IOException e) {
             Log.d("Assets", "Error");
         }
 
-=======
-    TextView tv = (TextView) findViewById(R.id.display);
-    Random randomGenerator = new Random();
-        int i = randomGenerator.nextInt(4);
->>>>>>> e69ec7ff70e5b42d94ff58ef26a1edacc562d53e
 
         Random randomGenerator = new Random();
         int i = randomGenerator.nextInt(4);
@@ -76,7 +69,6 @@ public class MainActivity extends AppCompatActivity {
                 im.setImageBitmap(bitmap);
 
                 break;
-<<<<<<< HEAD
             case 3:
                 s = ("吉");
                 bitmap = BitmapFactory.decodeStream(istream[3]);
@@ -84,20 +76,9 @@ public class MainActivity extends AppCompatActivity {
 
                 break;
 
-=======
-
-            case 3:
-                s = ("バーカｗｗｗｗｗｗ");
->>>>>>> e69ec7ff70e5b42d94ff58ef26a1edacc562d53e
         }
 
-       // tv.setText(s);
-        //im.setImageBitmap(bitmap);
 
-//        Uri.parse("https://twitter.com/intent/tweet?text="+"占った結果、今日の運勢は"+s);
-//
-//        Intent z = new Intent(Intent.ACTION_VIEW,uri);
-//        startActivity(z);
 
     }
 }
