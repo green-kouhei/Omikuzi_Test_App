@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void getomikuji(View view) {
+<<<<<<< HEAD
         TextView tv = (TextView) findViewById(R.id.display);
         ImageView im = (ImageView) findViewById(R.id.picture);
         Bitmap bitmap = null;
@@ -47,6 +48,11 @@ public class MainActivity extends AppCompatActivity {
             Log.d("Assets", "Error");
         }
 
+=======
+    TextView tv = (TextView) findViewById(R.id.display);
+    Random randomGenerator = new Random();
+        int i = randomGenerator.nextInt(4);
+>>>>>>> e69ec7ff70e5b42d94ff58ef26a1edacc562d53e
 
         Random randomGenerator = new Random();
         int i = randomGenerator.nextInt(4);
@@ -70,6 +76,7 @@ public class MainActivity extends AppCompatActivity {
                 im.setImageBitmap(bitmap);
 
                 break;
+<<<<<<< HEAD
             case 3:
                 s = ("吉");
                 bitmap = BitmapFactory.decodeStream(istream[3]);
@@ -77,6 +84,11 @@ public class MainActivity extends AppCompatActivity {
 
                 break;
 
+=======
+
+            case 3:
+                s = ("バーカｗｗｗｗｗｗ");
+>>>>>>> e69ec7ff70e5b42d94ff58ef26a1edacc562d53e
         }
 
        // tv.setText(s);
